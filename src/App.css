@@ -1,0 +1,247 @@
+/* Home Section */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  font-size: 35px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.logo span {
+  color: #ffcc00;
+}
+
+.navbar a {
+  font-size: 23px;
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+.videoBackground {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.videoBackground::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.5), transparent);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  z-index: 2;
+}
+
+/* Halaman Awal */
+.halamanAwal {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 120px 10%;
+  gap: 40px;
+  color: #fffff0;
+  margin-top: -100vh;
+}
+
+.content-kiri {
+  flex: 1 1 500px;
+  min-width: 300px;
+}
+
+.content-kiri h1 {
+  font-size: 62px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 100px;
+}
+
+.content-kiri h3 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.content-kiri h3 span {
+  color: #ffcc00;
+}
+
+.content-kiri p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.content-kanan {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-kanan img {
+  margin-top: 100px;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+  animation: melayang 6s ease-in-out infinite;
+  transition: filter 0.5s ease;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.4));
+}
+
+.content-kanan img:hover {
+  transform: scale(1.12) translate(30px) rotateX(2deg);
+  animation: melayang 6s ease-in-out infinite,
+    putarPelangi 2s linear infinite reverse;
+  filter: none;
+  cursor: pointer;
+}
+
+/* Animasi */
+@keyframes putarPelangi {
+  0% { filter: drop-shadow(0 0 25px red); }
+  16% { filter: drop-shadow(0 0 25px orange); }
+  32% { filter: drop-shadow(0 0 25px yellow); }
+  48% { filter: drop-shadow(0 0 25px green); }
+  64% { filter: drop-shadow(0 0 25px blue); }
+  80% { filter: drop-shadow(0 0 25px indigo); }
+  100% { filter: drop-shadow(0 0 25px violet); }
+}
+
+@keyframes melayang {
+  0% { transform: translateY(0) translateX(0); }
+  25% { transform: translateY(-10px) translateX(10px); }
+  50% { transform: translateY(-15px) translateX(0); }
+  75% { transform: translateY(-10px) translateX(-10px); }
+  100% { transform: translateY(0) translateX(0); }
+}
+
+/* Tentang Saya */
+.about {
+  padding: 120px 7% 5px;
+}
+
+.about h2 {
+  color: #fffff0;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.about h2 span {
+  color: #ffcc00;
+}
+
+.saya {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fffff0;
+}
+
+.foto-bis img {
+  margin-top: 1px;
+  margin-left: 200px;
+  width: 350px;
+  border-radius: 20px;
+  animation: melayang 6s ease-in-out infinite;
+  transition: filter 0.5s ease;
+  filter: drop-shadow(0 0 15px rgb(255, 255, 255));
+}
+
+.foto-bis p {
+  margin-left: 218px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.tentang-saya {
+  flex: 1;
+  max-width: 700px;
+  color: white;
+  margin-right: 175px;
+  margin-top: 15px;
+  margin-bottom: 75px;
+}
+
+.tentang-saya h2 {
+  font-size: 65px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.tentang-saya p {
+  margin-top: 20px;
+  font-size: 19px;
+  margin-bottom: 75px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .halamanAwal {
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 5%;
+    gap: 20px;
+  }
+
+  .content-kiri,
+  .content-kanan {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .content-kanan img {
+    margin-top: 30px;
+  }
+
+  .tentang-saya {
+    margin: 30px 20px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,78 @@
+.tech-section {
+  padding: 20px;
+}
+
+.tech-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+  margin-top: 125px;
+  text-align: center;
+}
+
+.paragraf-pemrograman {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 310px;
+    max-width: 1000px;
+    max-height: 400px;
+}
+
+.tech-container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  padding-bottom: 150px;
+  margin-top: 75px;
+}
+
+.tech-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.tech-card {
+  flex: 0 0 auto;
+  width: 120px;
+  height: 120px;
+  background-color: #18181b;
+  border: 1px solid #3f3f46;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin: 14.5px;
+}
+
+.tech-card:hover {
+  transform: scale(1.08);
+  background-color: #27272a;
+  box-shadow: 0 8px 12px rgba(0,0,0,0.5);
+}
+
+.tech-icon {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+/* Warna ikon */
+.node { color: #3c873a; }
+.html { color: #e34c26; }
+.css { color: #264de4; }
+.js { color: #f0db4f; }
+.git { color: #f14e32; }
+.github { color: #ffffff; }
+.vite { color: #a855f7; }
+.dart { color: #0175c2; }
+.flutter { color: #42a5f5; }
+.react { color: #42a5f5; }
