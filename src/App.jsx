@@ -11,7 +11,7 @@ import FotoWeb from "./assets/Foto-Web.jpg";
 import FotoDart from "./assets/dart.jpg";
 
 import TechStack from "./TechStack";
-import Project from "./Project";
+import Project from "./project";
 import Contact from "./Contact";
 
 
