@@ -13,7 +13,6 @@ import FotoDart from "./assets/dart.jpg";
 import TechStack from "./TechStack";
 import Project from "./Project";
 import Contact from "./Contact";
-import Footer from "./components/Footer";
 
 
 function App() {
