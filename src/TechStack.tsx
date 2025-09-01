@@ -20,7 +20,7 @@ export default function TechStack() {
         </div>
         <div className="tech-card">
           <FaHtml5 className="tech-icon html" />
-          <span>HTML5</span>
+          HTML5
         </div>
         <div className="tech-card">
           <FaCss3Alt className="tech-icon css" />
